@@ -1,0 +1,86 @@
+body {
+    font-family: 'Orbitron', sans-serif;
+    background-image: url("./matrix-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 50px;
+    margin-top: 50px;
+  }
+  
+  .board {
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+  
+  .square {
+    width: 90px;
+    height: 90px;
+    margin-right: -1px;
+    margin-bottom: -1px;
+    background-color: #111;
+    border: 1px solid #c7ffc7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .square:hover {
+    background-color: #00ff00;
+    border-color: #2d2d2d;
+  }
+  
+  .square[data-cell-index="0"],
+  .square[data-cell-index="3"],
+  .square[data-cell-index="6"] {
+    margin-left: 0;
+  }
+  
+  .square[data-cell-index="2"],
+  .square[data-cell-index="5"],
+  .square[data-cell-index="8"] {
+    margin-right: 0;
+  }
+  
+  .square[data-cell-index="0"],
+  .square[data-cell-index="1"],
+  .square[data-cell-index="2"] {
+    margin-top: 0;
+  }
+  
+  .square[data-cell-index="6"],
+  .square[data-cell-index="7"],
+  .square[data-cell-index="8"] {
+    margin-bottom: 0;
+  }
+  
+  .restart {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #e2e2e2;
+    color:#1c7e1c ;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .restart:hover {
+    background-color: #8a8a8a;
+    color: #00ff00;
+  }
+  
+  .status {
+    margin-top: 20px;
+    font-size: 30px;
+  }
+  
